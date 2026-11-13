@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lyric"
+dynamic = ["version"]
+description = "Synchronized MPRIS lyrics in the terminal, one word at a time"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "ash" }]
+requires-python = ">=3.10"
+keywords = ["lyrics", "mpris", "karaoke", "terminal", "linux", "tui"]
+classifiers = [
+  "Environment :: Console :: Curses",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Sound/Audio",
+]
+dependencies = [
+  "dbus-next>=0.2.3",
+  "syncedlyrics>=1.0.0",
+  "wcwidth>=0.2.13",
+]
+
+[project.optional-dependencies]
+test = ["pyte>=0.8.2"]
+
+[project.scripts]
+lyric = "lyric.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/ash262049-png/lyric"
+Issues = "https://github.com/ash262049-png/lyric/issues"
+
+[tool.hatch.version]
+path = "src/lyric/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lyric"]
