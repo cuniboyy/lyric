@@ -32,8 +32,8 @@ test = ["pyte>=0.8.2"]
 lyric = "lyric.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/ash262049-png/lyric"
-Issues = "https://github.com/ash262049-png/lyric/issues"
+Homepage = "https://github.com/cuniboyy/lyric"
+Issues = "https://github.com/cuniboyy/lyric/issues"
 
 [tool.hatch.version]
 path = "src/lyric/__init__.py"

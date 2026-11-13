@@ -40,15 +40,15 @@ the first time a track is played.
 ## Install
 
 ```sh
-pipx install git+https://github.com/ash262049-png/lyric
+pipx install git+https://github.com/cuniboyy/lyric
 # or
-uv tool install git+https://github.com/ash262049-png/lyric
+uv tool install git+https://github.com/cuniboyy/lyric
 ```
 
 From a checkout:
 
 ```sh
-git clone https://github.com/ash262049-png/lyric
+git clone https://github.com/cuniboyy/lyric
 cd lyric
 python -m venv .venv
 .venv/bin/pip install -e .
