@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Minimal MPRIS media player for testing playerctl-driven apps.
+"""Minimal MPRIS media player for testing MPRIS-driven apps.
 
 Usage:
   fake_mpris.py --file /path/track.mp3 --artist "Rick Astley" \
